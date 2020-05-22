@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "717781604551",
+    "firebase_url": "https://my-portfolio-275608.firebaseio.com",
+    "project_id": "my-portfolio-275608",
+    "storage_bucket": "my-portfolio-275608.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717781604551:android:cf93b19dae58eb5e7dc6e2",
+        "android_client_info": {
+          "package_name": "com.app.desawisata.bantaragung"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717781604551-4k638p40t5ilakknb5mphvsl0bmgcrvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrIsPEgTlWAF3FFZARzHfdTr4nWQCcDQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717781604551-4k638p40t5ilakknb5mphvsl0bmgcrvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717781604551:android:5427d1a043db60be7dc6e2",
+        "android_client_info": {
+          "package_name": "com.app.gastranetwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717781604551-4k638p40t5ilakknb5mphvsl0bmgcrvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrIsPEgTlWAF3FFZARzHfdTr4nWQCcDQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717781604551-4k638p40t5ilakknb5mphvsl0bmgcrvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717781604551:android:e768e7548092db837dc6e2",
+        "android_client_info": {
+          "package_name": "com.app.viperapptemplate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717781604551-4k638p40t5ilakknb5mphvsl0bmgcrvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrIsPEgTlWAF3FFZARzHfdTr4nWQCcDQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717781604551-4k638p40t5ilakknb5mphvsl0bmgcrvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

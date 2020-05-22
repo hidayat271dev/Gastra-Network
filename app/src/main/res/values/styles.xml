@@ -1,0 +1,118 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--  BUTTON STYLE  -->
+    <style name="AppButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_rounded</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppButtonPrimary" parent="AppButton">
+        <item name="android:backgroundTint">@color/colorButtonPrimary</item>
+    </style>
+
+    <style name="AppButtonSuccess" parent="AppButton">
+        <item name="android:backgroundTint">@color/colorButtonSuccess</item>
+    </style>
+
+    <style name="AppButtonWarning" parent="AppButton">
+        <item name="android:backgroundTint">@color/colorButtonWarning</item>
+    </style>
+
+    <style name="AppButtonDanger" parent="AppButton">
+        <item name="android:backgroundTint">@color/colorButtonDanger</item>
+    </style>
+    <!--  BUTTON STYLE  -->
+
+    <!--  EDITTEXT  -->
+    <style name="AppEditText">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="edt_background">@drawable/edittext_rounded</item>
+        <item name="edt_padding">16dp</item>
+        <item name="edt_text_color">@color/ic_launcher_background</item>
+        <item name="edt_text_size">12sp</item>
+    </style>
+
+    <style name="AppDropDown">
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/edittext_rounded</item>
+        <item name="spinner_arrow_drawable">@drawable/ic_down</item>
+        <item name="spinner_arrow_show">true</item>
+        <item name="spinner_arrow_gravity">end</item>
+        <item name="spinner_arrow_padding">16dp</item>
+        <item name="spinner_divider_show">true</item>
+        <item name="spinner_popup_animation">dropdown</item>
+        <item name="spinner_popup_elevation">14dp</item>
+        <item name="spinner_popup_background">@color/colorWhite</item>
+    </style>
+    <!--  EDITTEXT  -->
+
+    <!--  DIALOG STYLE  -->
+    <style name="AppDialogTitle" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorDialogTitle</item>
+    </style>
+
+    <style name="AppDialogContent" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorDialogContent</item>
+    </style>
+    
+    <style name="AppBottomDialogTheme" parent="BottomDialogTheme">
+        <item name="bottom_sheet_extra_padding">4dp</item>
+        <item name="should_draw_under_status_bar">true</item>
+    </style>
+
+    <style name="AppCenterDialogTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppFullDialogTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AnimationFade" >
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <!--  DIALOG STYLE  -->
+
+    <!--  APPBAR STYLE  -->
+    <style name="AppBarTitle" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <!--  APPBAR STYLE  -->
+
+</resources>

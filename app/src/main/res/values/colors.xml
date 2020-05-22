@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorPrimary">#3E3E3E</color>
+    <color name="colorPrimaryDark">#202020</color>
+    <color name="colorAccent">#18CEBB</color>
+    <color name="colorBackground">#D8D8D8</color>
+    <color name="colorBackgroundOverlay">#2D2D2D</color>
+    <color name="colorBackgroudCard">#FFFFFF</color>
+
+    <color name="colorButtonPrimary">#35BEE0</color>
+    <color name="colorButtonSuccess">#5CBA47</color>
+    <color name="colorButtonWarning">#FFC611</color>
+    <color name="colorButtonDanger">#FF6EA1</color>
+
+    <color name="colorDialogTitle">#131313</color>
+    <color name="colorDialogContent">#131313</color>
+</resources>

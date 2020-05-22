@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.app.gastranetwork"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable = false
+        }
+        debug {
+            debuggable = true
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Coroutine
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.4"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.4"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-alpha02"
+
+    // Firebase
+    implementation "com.google.firebase:firebase-analytics:17.4.1"
+    implementation "com.google.firebase:firebase-database:19.3.0"
+
+    // Retrofit [https://github.com/square/retrofit]
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.5.0"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+    implementation "io.reactivex.rxjava2:rxjava:2.2.9"
+    implementation "com.squareup.retrofit2:converter-gson:2.5.0"
+    implementation "com.squareup.okhttp3:okhttp:3.14.1"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.14.1"
+    implementation("com.squareup.retrofit2:retrofit:2.5.0") {
+        // exclude Retrofit’s OkHttp peer-dependency module and define your own module import
+        exclude module: "okhttp"
+    }
+
+    // Room Database
+    implementation "androidx.room:room-runtime:2.2.5"
+    kapt "androidx.room:room-compiler:2.2.5"
+    implementation "androidx.room:room-ktx:2.2.5"
+    implementation "androidx.room:room-rxjava2:2.2.5"
+    implementation "androidx.room:room-guava:2.2.5"
+    testImplementation "androidx.room:room-testing:2.2.5"
+
+    // Android Debug Database [https://github.com/amitshekhariitbhu/Android-Debug-Database]
+    debugImplementation "com.amitshekhar.android:debug-db:1.0.6"
+    debugImplementation "com.amitshekhar.android:debug-db-encrypt:1.0.6"
+
+    // Gander [https://github.com/Ashok-Varma/Gander]
+    debugImplementation "com.ashokvarma.android:gander:1.4.0"
+
+    // Hawk 2.0 [https://github.com/orhanobut/hawk]
+    implementation "com.orhanobut:hawk:2.0.1"
+
+    // Bottom Drawer [https://github.com/HeyAlex/BottomDrawer]
+    implementation 'com.github.HeyAlex:BottomDrawer:v1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Android GIF [https://github.com/koral--/android-gif-drawable]
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
+    // Android-SpinKit [https://github.com/ybq/Android-SpinKit]
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    // CustomEditText [https://github.com/rkmobile2519/customedittext]
+    implementation 'com.github.rkmobile2519:customedittext:1.0.0'
+
+    // SDP - a scalable size unit [https://github.com/intuit/sdp]
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    // SSP - a scalable size unit for texts [https://github.com/intuit/ssp]
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    // PowerSpinner [https://github.com/skydoves/PowerSpinner]
+    implementation "com.github.skydoves:powerspinner:1.0.4"
+
+    // Switcher [https://github.com/bitvale/Switcher]
+    implementation 'com.bitvale:switcher:1.1.0'
+}

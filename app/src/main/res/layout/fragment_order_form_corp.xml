@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_black"
+                    android:text="GASTRA Network"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Order Form"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingBottom="16dp"
+                    android:text="Corp Detail"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                style="@style/AppDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Nama Perusahaan"
+                app:spinner_item_array="@array/data_temp" />
+
+            <com.lib.customedittext.CustomEditText
+                style="@style/AppEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned|text|numberDecimal"
+                app:edt_hint="No NPWP">
+
+            </com.lib.customedittext.CustomEditText>
+
+            <com.lib.customedittext.CustomEditText
+                style="@style/AppEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine|text"
+                android:lines="3"
+                app:edt_hint="Alamat Perusahaan">
+
+            </com.lib.customedittext.CustomEditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    style="@style/AppDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:hint="Provinsi"
+                    app:spinner_item_array="@array/data_temp" />
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="2"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|text"
+                    app:edt_hint="Kode Pos" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    style="@style/AppDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:hint="Kota"
+                    app:spinner_item_array="@array/data_temp" />
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|text"
+                    app:edt_hint="RT">
+
+                </com.lib.customedittext.CustomEditText>
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="0dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    app:edt_hint="RW" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    app:edt_hint="No Telepon" />
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|phone"
+                    app:edt_hint="No Fax">
+
+                </com.lib.customedittext.CustomEditText>
+            </LinearLayout>
+
+            <com.lib.customedittext.CustomEditText
+                style="@style/AppEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                app:edt_hint="Email Perusahaan">
+
+            </com.lib.customedittext.CustomEditText>
+
+            <com.lib.customedittext.CustomEditText
+                style="@style/AppEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine|text"
+                android:lines="3"
+                app:edt_hint="Alamat Pemasangan">
+
+            </com.lib.customedittext.CustomEditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    style="@style/AppDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:hint="Provinsi"
+                    app:spinner_item_array="@array/data_temp" />
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="2"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|text"
+                    app:edt_hint="Kode Pos" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    style="@style/AppDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:hint="Kota"
+                    app:spinner_item_array="@array/data_temp" />
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|text"
+                    app:edt_hint="RT">
+
+                </com.lib.customedittext.CustomEditText>
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="0dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|text"
+                    app:edt_hint="RW" />
+
+            </LinearLayout>
+
+            <com.lib.customedittext.CustomEditText
+                style="@style/AppEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                app:edt_hint="Email Perusahaan">
+
+            </com.lib.customedittext.CustomEditText>
+
+            <com.lib.customedittext.CustomEditText
+                style="@style/AppEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine|text"
+                android:lines="3"
+                app:edt_hint="Alamat Penagihan">
+
+            </com.lib.customedittext.CustomEditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/powerSpinnerView"
+                    style="@style/AppDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:hint="Provinsi"
+                    app:spinner_item_array="@array/data_temp" />
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="2"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|text"
+                    app:edt_hint="Kode Pos" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    style="@style/AppDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:hint="Kota"
+                    app:spinner_item_array="@array/data_temp" />
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|text"
+                    app:edt_hint="RT">
+
+                </com.lib.customedittext.CustomEditText>
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="0dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|text"
+                    app:edt_hint="RW" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fragment_order_form_corp_cancel"
+                    style="@style/AppButtonDanger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:text="Back" />
+
+                <Button
+                    android:id="@+id/fragment_order_form_corp_yes"
+                    style="@style/AppButtonPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:text="Next" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_black"
+                    android:text="GASTRA Network"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Order Form"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingBottom="16dp"
+                    android:text="Contact Detail"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                style="@style/AppDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Contact Person"
+                app:spinner_item_array="@array/data_temp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|phone"
+                    app:edt_hint="No Telepon" />
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="2"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|text"
+                    app:edt_hint="Ext">
+
+                </com.lib.customedittext.CustomEditText>
+            </LinearLayout>
+
+            <com.lib.customedittext.CustomEditText
+                style="@style/AppEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:imeOptions="actionNext"
+                android:inputType="text|phone"
+                app:edt_hint="No HP">
+
+            </com.lib.customedittext.CustomEditText>
+
+            <com.lib.customedittext.CustomEditText
+                style="@style/AppEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                app:edt_hint="Email">
+
+            </com.lib.customedittext.CustomEditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/powerSpinnerView2"
+                    style="@style/AppDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Technical Contact Person"
+                    app:spinner_item_array="@array/data_temp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.lib.customedittext.CustomEditText
+                        style="@style/AppEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|phone"
+                        app:edt_hint="No Telepon" />
+
+                    <com.lib.customedittext.CustomEditText
+                        style="@style/AppEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="2"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|text"
+                        app:edt_hint="Ext">
+
+                    </com.lib.customedittext.CustomEditText>
+                </LinearLayout>
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|phone"
+                    app:edt_hint="No HP">
+
+                </com.lib.customedittext.CustomEditText>
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    app:edt_hint="Email">
+
+                </com.lib.customedittext.CustomEditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/powerSpinnerView2"
+                    style="@style/AppDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Billing Contact Person"
+                    app:spinner_item_array="@array/data_temp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.lib.customedittext.CustomEditText
+                        style="@style/AppEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|phone"
+                        app:edt_hint="No Telepon" />
+
+                    <com.lib.customedittext.CustomEditText
+                        style="@style/AppEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="2"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|text"
+                        app:edt_hint="Ext">
+
+                    </com.lib.customedittext.CustomEditText>
+                </LinearLayout>
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|phone"
+                    app:edt_hint="No HP">
+
+                </com.lib.customedittext.CustomEditText>
+
+                <com.lib.customedittext.CustomEditText
+                    style="@style/AppEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    app:edt_hint="Email">
+
+                </com.lib.customedittext.CustomEditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:text="Reseller" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <com.bitvale.switcher.SwitcherX
+                    android:id="@+id/fragment_order_form_contract_s_reseller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:checked="false"
+                    app:switcher_icon_color="@color/colorWhite"
+                    app:switcher_off_color="@color/colorButtonDanger"
+                    app:switcher_on_color="@color/colorButtonSuccess" />
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/fragment_order_form_contract_sp_reseller"
+                    style="@style/AppDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:hint="Reseller Name"
+                    app:spinner_item_array="@array/data_temp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fragment_order_form_contract_btn_cancel"
+                    style="@style/AppButtonDanger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:text="Back" />
+
+                <Button
+                    android:id="@+id/fragment_order_form_contract_btn_yes"
+                    style="@style/AppButtonPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:text="Next" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
